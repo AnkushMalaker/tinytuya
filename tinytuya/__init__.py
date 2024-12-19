@@ -88,12 +88,9 @@
     Updated pytuya to support devices with Device IDs of 22 characters
 
 """
-
-from .core import *
-from .core import __version__
-from .core import __author__
-
-from .OutletDevice import OutletDevice
-from .CoverDevice import CoverDevice
 from .BulbDevice import BulbDevice
 from .Cloud import Cloud
+from .core import *
+from .core import __author__, __version__
+from .CoverDevice import CoverDevice
+from .OutletDevice import OutletDevice

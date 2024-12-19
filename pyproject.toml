@@ -1,2 +1,28 @@
 [build-system]
-requires = ["setuptools", "colorama", "requests", "cryptography"]
+requires = [
+    "setuptools>=45",
+    "wheel",
+    "requests",
+    "colorama",
+    "cryptography",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tinytuya"
+version = "1.15.1"
+description = "Python module to interface with Tuya WiFi smart devices"
+authors = [
+    {name = "Jason Cox", email = "jason@jasonacox.com"},
+]
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "requests",
+    "colorama",
+    "cryptography",
+]
+
+[tool.setuptools]
+packages = ["tinytuya"]
+package-dir = {"" = "."}

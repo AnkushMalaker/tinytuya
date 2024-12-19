@@ -1,8 +1,6 @@
 import setuptools
 from pkg_resources import DistributionNotFound, get_distribution
 
-from tinytuya import __version__
-
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
@@ -32,7 +30,6 @@ INSTALL_REQUIRES.append( pref_lib )
 
 setuptools.setup(
     name="tinytuya",
-    version=__version__,
     author="Jason Cox",
     author_email="jason@jasonacox.com",
     description="Python module to interface with Tuya WiFi smart devices",
